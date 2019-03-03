@@ -4,5 +4,6 @@ services:
   -docker
 
 script:
-  - docker-compose up
+  - docker-compose up -d
   - docker-compose down
+  - ./run_tests.sh
